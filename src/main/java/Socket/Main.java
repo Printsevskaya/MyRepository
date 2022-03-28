@@ -1,56 +1,47 @@
 package Socket;
 
 import com.sun.corba.se.spi.activation.Server;
+import com.sun.scenario.effect.impl.prism.PrRenderInfo;
 
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.io.IOException;
+import java.util.Map;
 
 public class Main {
-    static List<ClientSocket>  clients = new ArrayList<>();;
-    public static class MyThread extends Thread {
-//        static List<ClientSocket> clients;
-        ServerSocket server;
-        @Override
-        public void run() {
-           // clients = new ArrayList<>();
-            server = null;
+
+    public static Map<String, ClientSocket> clients = new HashMap<>();
+    private ServerSocket server;
+    private Socket client;
+    public Main() {
+        new Thread(() -> {
             try {
-                server = new ServerSocket(8080);
+                server = new ServerSocket(8050);
                 System.out.println("Server start");
             } catch (IOException e) {
                 e.printStackTrace();
             }
             while (true){
-                Socket client = null;
                 try {
                     client = server.accept();
+                    ClientSocket socket = new ClientSocket(client);
+//                        clients.add(socket);
+//                        System.out.println("client connected");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                ClientSocket user = new ClientSocket(client);
-                user.start();
-                clients.add(user);
-                System.out.println("client connected");
-//                try {
-//                    assert client != null;
-//                    BufferedWriter out = new BufferedWriter(new OutputStreamWriter(user.socket.getOutputStream()));
-//                    out.write("You are connected!");
-//                    out.flush();
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
+               // client = server.isClosed()
+                // погуглить как закрывать порт Closable + try with e resources , block finally? xnj, .получать сообщение, если юзера не существует
+                // потренироваться все с лябмдами
             }
-        }
+        }).start();
     }
 
-    public static void main(String[] args) throws IOException {
-        Thread thread = new MyThread();
-        thread.start();
+    public static void main(String[] args) {
+        new Main();
         System.out.println("Continue.....");
     }
+
 }

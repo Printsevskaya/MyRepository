@@ -1,48 +1,41 @@
 package Socket;
 
+
 import java.io.*;
 import java.net.Socket;
 
 public class Client {
-    private static BufferedReader reader; // нам нужен ридер читающий с консоли, иначе как
-    // мы узнаем что хочет сказать клиент?
-    private static BufferedReader in; // поток чтения из сокета
-    private static BufferedWriter out; // поток записи в сокет
-    public static void main(String[] args) throws IOException {
-        Socket client = new Socket("localhost", 8080);
-        reader = new BufferedReader(new InputStreamReader(System.in));
-        // читать соообщения с сервера
-        in = new BufferedReader(new InputStreamReader(client.getInputStream()));
-        // писать туда же
-        out = new BufferedWriter(new OutputStreamWriter(client.getOutputStream()));
+    Socket client;
+    BufferedReader in;
+    PrintWriter out;
+    BufferedReader  reader;
+    String name;
+    public Client() {
+        while (true) {
+           // lovecSoobsheniy();
+            while (true) {
+                try {
+                    client = new Socket("localhost", 8050);
+                    in = new BufferedReader(new InputStreamReader(client.getInputStream()));
+                    out = new PrintWriter(client.getOutputStream(), true);
+                    reader = new BufferedReader(new InputStreamReader(System.in));
 
-//        System.out.println("Вы что-то хотели сказать? Введите это здесь:");
-//        // если соединение произошло и потоки успешно созданы - мы можем
-//        //  работать дальше и предложить клиенту что то ввести
-//        // если нет - вылетит исключение
-//        String word = reader.readLine(); // ждём пока клиент что-нибудь
-//        // не напишет в консоль
-//        out.write(word + "\n"); // отправляем сообщение на сервер
-//        out.flush();
-//        String serverWord = in.readLine(); // ждём, что скажет сервер
-//        System.out.println(serverWord); // получив - выводим на экран
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("Вы что-то хотели сказать? Введите это здесь:");
-                String word = null;
-                while (true) {
-                    try {
-                        word = reader.readLine();
-                        out.write(word + "\n");
-                        out.flush();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+                    System.out.println(in.readLine()); // ВАше имя?
+                    name = reader.readLine(); // вписываем имя
+                    break;
+                } catch (IOException e) {
+                    System.out.println("Сервер не доступен");
+                    ;
                 }
             }
-        }).start();
+            lovecSoobsheniy();
+        }
+    }
+
+    public void lovecSoobsheniy(){
+        out.write(name + "\n"); // отправляем имя
+        out.flush();
+
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -51,11 +44,27 @@ public class Client {
                         String serverWord = in.readLine();
                         System.out.println(serverWord);
                     } catch (IOException e) {
-                        e.printStackTrace();
+                        break;
                     }
                 }
             }
         }).start();
 
+        System.out.println("Вы что-то хотели сказать? Введите это здесь:");
+        while (true) {
+            try {
+                String word  = reader.readLine();
+                out.write(word + "\n");
+                out.flush();
+            } catch (IOException e) {
+                break;
+            }
+        }
+//        System.out.println("Сервер лег");
     }
+
+    public static void main(String[] args) throws IOException {
+        new Client();
+    }
+
 }

@@ -14,12 +14,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa4ac157-0248-4733-93f0-5f0320764298" name="Default Changelist" comment="git commit">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Socket/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Socket/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Socket/ClientSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Socket/ClientSocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Socket/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Socket/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Socket/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Socket/Client$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Socket/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Socket/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Socket/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Socket/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Socket/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,14 +36,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="24K0a6pPNKsQa7eTJXd1AJfmF3l" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,8 +48,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../demo" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Socket.Client" />
       <module name="Socket" />
@@ -85,8 +84,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -111,76 +110,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git commit" />
     <option name="LAST_COMMIT_MESSAGE" value="git commit" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1643646042513">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1643646042513" />
-    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1643364180572">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1643364180572" />
-    <state width="1514" height="364" key="GridCell.Tab.0.bottom" timestamp="1644068958288">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1514" height="364" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1644068958288" />
-    <state width="1514" height="364" key="GridCell.Tab.0.center" timestamp="1644068958288">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1514" height="364" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1644068958288" />
-    <state width="1514" height="364" key="GridCell.Tab.0.left" timestamp="1644068958288">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1514" height="364" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1644068958288" />
-    <state width="1514" height="364" key="GridCell.Tab.0.right" timestamp="1644068958288">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1514" height="364" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1644068958288" />
-    <state width="1514" height="364" key="GridCell.Tab.1.bottom" timestamp="1644068958289">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1514" height="364" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1644068958289" />
-    <state width="1514" height="364" key="GridCell.Tab.1.center" timestamp="1644068958288">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1514" height="364" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1644068958288" />
-    <state width="1514" height="364" key="GridCell.Tab.1.left" timestamp="1644068958288">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1514" height="364" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1644068958288" />
-    <state width="1514" height="364" key="GridCell.Tab.1.right" timestamp="1644068958288">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1514" height="364" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1644068958288" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1643650273642">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1643650273642" />
-    <state x="456" y="195" key="run.anything.popup" timestamp="1643656557887">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1643656557887" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Socket/ClientSocket.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Socket/Client.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
