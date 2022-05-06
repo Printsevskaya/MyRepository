@@ -13,14 +13,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa4ac157-0248-4733-93f0-5f0320764298" name="Default Changelist" comment="git commit">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Socket/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Socket/Client$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Socket/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Socket/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Socket/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Socket/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Socket/Main.class" afterDir="false" />
-    </list>
+    <list default="true" id="aa4ac157-0248-4733-93f0-5f0320764298" name="Default Changelist" comment="git commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +32,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="24K0a6pPNKsQa7eTJXd1AJfmF3l" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -49,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../demo" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
